@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.kiddipannel = new System.Windows.Forms.Panel();
-            this.spaði = new System.Windows.Forms.PictureBox();
             this.bolti = new System.Windows.Forms.PictureBox();
+            this.spaði = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.kiddipannel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.spaði)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolti)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spaði)).BeginInit();
             this.SuspendLayout();
             // 
             // kiddipannel
@@ -48,6 +48,15 @@
             this.kiddipannel.Size = new System.Drawing.Size(875, 480);
             this.kiddipannel.TabIndex = 0;
             // 
+            // bolti
+            // 
+            this.bolti.BackColor = System.Drawing.Color.Red;
+            this.bolti.Location = new System.Drawing.Point(349, 161);
+            this.bolti.Name = "bolti";
+            this.bolti.Size = new System.Drawing.Size(100, 50);
+            this.bolti.TabIndex = 1;
+            this.bolti.TabStop = false;
+            // 
             // spaði
             // 
             this.spaði.BackColor = System.Drawing.SystemColors.HotTrack;
@@ -56,15 +65,6 @@
             this.spaði.Size = new System.Drawing.Size(200, 20);
             this.spaði.TabIndex = 0;
             this.spaði.TabStop = false;
-            // 
-            // bolti
-            // 
-            this.bolti.BackColor = System.Drawing.Color.Red;
-            this.bolti.Location = new System.Drawing.Point(349, 161);
-            this.bolti.Name = "bolti";
-            this.bolti.Size = new System.Drawing.Size(50, 50);
-            this.bolti.TabIndex = 1;
-            this.bolti.TabStop = false;
             // 
             // timer1
             // 
@@ -79,8 +79,8 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.kiddipannel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.spaði)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolti)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spaði)).EndInit();
             this.ResumeLayout(false);
 
         }
