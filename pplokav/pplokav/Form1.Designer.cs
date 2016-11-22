@@ -53,7 +53,7 @@
             this.bolti.BackColor = System.Drawing.Color.Red;
             this.bolti.Location = new System.Drawing.Point(349, 161);
             this.bolti.Name = "bolti";
-            this.bolti.Size = new System.Drawing.Size(100, 50);
+            this.bolti.Size = new System.Drawing.Size(50, 50);
             this.bolti.TabIndex = 1;
             this.bolti.TabStop = false;
             // 

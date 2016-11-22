@@ -39,7 +39,7 @@ namespace pplokav
             bolti.Left += speed_left; //hreifir boltan
             bolti.Top += speed_top;
 
-            if (bolti.Bottom >= spaði.Top && bolti.Bottom <= spaði.Bottom && bolti >= spaði.Left && bolti.Right <= spaði.Right ) // spaði collision
+            if (bolti.Bottom >= spaði.Top && bolti.Bottom <= spaði.Bottom && bolti.Left >= spaði.Left && bolti.Right <= spaði.Right ) // spaði collision
             {
                 speed_top += 2;
                 speed_left += 2;
