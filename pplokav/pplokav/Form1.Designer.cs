@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.kiddipannel = new System.Windows.Forms.Panel();
-            this.spaði = new System.Windows.Forms.PictureBox();
             this.bolti = new System.Windows.Forms.PictureBox();
+            this.spaði = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.kiddipannel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.spaði)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolti)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spaði)).BeginInit();
             this.SuspendLayout();
             // 
             // kiddipannel
@@ -46,6 +48,15 @@
             this.kiddipannel.Size = new System.Drawing.Size(875, 480);
             this.kiddipannel.TabIndex = 0;
             // 
+            // bolti
+            // 
+            this.bolti.BackColor = System.Drawing.Color.Red;
+            this.bolti.Location = new System.Drawing.Point(349, 161);
+            this.bolti.Name = "bolti";
+            this.bolti.Size = new System.Drawing.Size(100, 50);
+            this.bolti.TabIndex = 1;
+            this.bolti.TabStop = false;
+            // 
             // spaði
             // 
             this.spaði.BackColor = System.Drawing.SystemColors.HotTrack;
@@ -55,13 +66,9 @@
             this.spaði.TabIndex = 0;
             this.spaði.TabStop = false;
             // 
-            // bolti
+            // timer1
             // 
-            this.bolti.Location = new System.Drawing.Point(349, 161);
-            this.bolti.Name = "bolti";
-            this.bolti.Size = new System.Drawing.Size(100, 50);
-            this.bolti.TabIndex = 1;
-            this.bolti.TabStop = false;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -72,8 +79,8 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.kiddipannel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.spaði)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolti)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spaði)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -83,6 +90,7 @@
         private System.Windows.Forms.Panel kiddipannel;
         private System.Windows.Forms.PictureBox spaði;
         private System.Windows.Forms.PictureBox bolti;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

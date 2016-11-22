@@ -15,7 +15,13 @@ namespace pplokav
         public Form1()
         {
             InitializeComponent();
+            timer1.Enabled = true;
+            Cursor.Hide(); //felur cursor
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
 
         }
     }
