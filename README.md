@@ -1,0 +1,2 @@
+# pingponglokaverkefni
+ola senor
