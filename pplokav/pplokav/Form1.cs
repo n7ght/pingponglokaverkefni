@@ -38,6 +38,11 @@ namespace pplokav
 
             bolti.Left += speed_left; //hreifir boltan
             bolti.Top += speed_top;
+
+            if (bolti.Bottom >= spaði.Top && bolti.Bottom <= spaði.Bottom && bolti >= spaði.Left && bolti.Right <= spaði.Right ) // spaði collision
+            {
+                
+            }
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
