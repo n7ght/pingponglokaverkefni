@@ -78,6 +78,7 @@
             this.Controls.Add(this.kiddipannel);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.kiddipannel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bolti)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spaði)).EndInit();
