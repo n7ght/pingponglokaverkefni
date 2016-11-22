@@ -21,6 +21,10 @@ namespace pplokav
 
             this.FormBorderStyle = FormBorderStyle.None; // tekur burt borders
             this.TopMost = true;                        // færir formið fremst
+            this.Bounds = Screen.PrimaryScreen.Bounds;  // setur í fullscreen
+
+            spaði.Top = kiddipannel.Bottom - (kiddipannel.Bottom / 10); // setur stöðu á spaðanum
+
 
         }
 
