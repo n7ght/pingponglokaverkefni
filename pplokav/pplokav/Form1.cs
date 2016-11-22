@@ -21,7 +21,19 @@ namespace pplokav
         {
             InitializeComponent();
 
+            timer1.Enabled = true;
+            Cursor.Hide(); //felur músina
 
+            this.FormBorderStyle = FormBorderStyle.None; //tekur borders í burtu
+            this.TopMost = true;//setur formid fremst
+            this.Bounds = Screen.PrimaryScreen.Bounds;//fullscreen
+
+
+            spaðinn.Top = bakgrunnur.Bottom - (bakgrunnur.Bottom / 10); //setur stadsetningu a spadanum.
+
+            lb_gameover.Left = (bakgrunnur.Width / 2) - (lb_gameover.Width / 2);
+            lb_gameover.Top = (bakgrunnur.Height / 2) - (lb_gameover.Height / 2);
+            lb_gameover.Visible = false;
 
         }
     }
