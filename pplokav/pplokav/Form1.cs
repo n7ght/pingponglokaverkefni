@@ -20,6 +20,9 @@ namespace pplokav
         public Form1()
         {
             InitializeComponent();
+
+
+
         }
     }
 }
