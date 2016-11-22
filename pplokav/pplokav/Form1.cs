@@ -13,6 +13,8 @@ namespace pplokav
     public partial class Form1 : Form
     {
         public int speed_left = 4; //hraði boltans
+        public int speedÖtop = 4;
+        public int point = 0;
 
         public Form1()
         {
