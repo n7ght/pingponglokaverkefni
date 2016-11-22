@@ -41,7 +41,15 @@ namespace pplokav
 
             if (bolti.Bottom >= spaði.Top && bolti.Bottom <= spaði.Bottom && bolti >= spaði.Left && bolti.Right <= spaði.Right ) // spaði collision
             {
-                
+                speed_top += 2;
+                speed_left += 2;
+                speed_top = -speed_top; //breytir um átt
+                point += 1; //bætir við stigi
+            }
+
+            if (bolti.Left <= kiddipannel.Left)
+            {
+                speed_left = -speed_left;
             }
         }
 
