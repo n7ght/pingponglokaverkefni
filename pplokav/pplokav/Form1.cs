@@ -18,6 +18,10 @@ namespace pplokav
             timer1.Enabled = true;
             Cursor.Hide(); //felur cursor
 
+            this.FormBorderStyle = FormBorderStyle.None; //fjarlægir borders
+            this.TopMost = true;                        //Bring The Form To The Front
+            this.Bounds = Screen.PrimaryScreen.Bounds;   //Setur í full screen
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
