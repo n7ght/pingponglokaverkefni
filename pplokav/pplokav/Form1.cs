@@ -51,7 +51,16 @@ namespace pplokav
             {
                 speed_left = -speed_left;
             }
+            if (bolti.Right >= kiddipannel.Right)
+            {
+                speed_left = -speed_left;
+            }
+            if (bolti.Top <= kiddipannel.Top)
+            {
+                speed_top = -speed_top;
+            }
         }
+
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
