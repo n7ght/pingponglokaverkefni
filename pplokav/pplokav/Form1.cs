@@ -59,6 +59,11 @@ namespace pplokav
             {
                 speed_top = -speed_top;
             }
+
+            if (bolti.Bottom >= kiddipannel.Bottom)
+            {
+                timer1.Enabled = false;  // boltinn er úti -> stoppar leikinn
+            }
         }
 
 
