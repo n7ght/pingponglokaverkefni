@@ -30,15 +30,15 @@
         {
             this.kiddipannel = new System.Windows.Forms.Panel();
             this.spaði = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bolti = new System.Windows.Forms.PictureBox();
             this.kiddipannel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spaði)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bolti)).BeginInit();
             this.SuspendLayout();
             // 
             // kiddipannel
             // 
-            this.kiddipannel.Controls.Add(this.pictureBox1);
+            this.kiddipannel.Controls.Add(this.bolti);
             this.kiddipannel.Controls.Add(this.spaði);
             this.kiddipannel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kiddipannel.Location = new System.Drawing.Point(0, 0);
@@ -55,13 +55,13 @@
             this.spaði.TabIndex = 0;
             this.spaði.TabStop = false;
             // 
-            // pictureBox1
+            // bolti
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(349, 161);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.bolti.Location = new System.Drawing.Point(349, 161);
+            this.bolti.Name = "bolti";
+            this.bolti.Size = new System.Drawing.Size(100, 50);
+            this.bolti.TabIndex = 1;
+            this.bolti.TabStop = false;
             // 
             // Form1
             // 
@@ -73,7 +73,7 @@
             this.Text = "Form1";
             this.kiddipannel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.spaði)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bolti)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -82,7 +82,7 @@
 
         private System.Windows.Forms.Panel kiddipannel;
         private System.Windows.Forms.PictureBox spaði;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox bolti;
     }
 }
 
