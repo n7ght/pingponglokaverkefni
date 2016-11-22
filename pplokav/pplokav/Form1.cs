@@ -69,7 +69,7 @@ namespace pplokav
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Escape) {this.Close()} // Escape til að hætta
+            if (e.KeyCode == Keys.Escape) { this.Close(); } // Escape til að hætta
         }
     }
 }
