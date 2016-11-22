@@ -17,7 +17,10 @@ namespace pplokav
             InitializeComponent();
 
             timer1.Enabled = true;
-            Cursor.Hide();
+            Cursor.Hide();                 // felur cursor
+
+            this.FormBorderStyle = FormBorderStyle.None; // tekur burt borders
+            this.TopMost = true;                        // færir formið fremst
 
         }
 
