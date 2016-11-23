@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bakgrunnur = new System.Windows.Forms.Panel();
             this.lb_newhighscore = new System.Windows.Forms.Label();
             this.lb_highscore = new System.Windows.Forms.Label();
@@ -65,6 +66,7 @@
             // 
             this.lb_newhighscore.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_newhighscore.AutoSize = true;
+            this.lb_newhighscore.BackColor = System.Drawing.Color.Transparent;
             this.lb_newhighscore.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_newhighscore.Location = new System.Drawing.Point(329, 149);
             this.lb_newhighscore.Name = "lb_newhighscore";
@@ -76,6 +78,7 @@
             // 
             this.lb_highscore.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_highscore.AutoSize = true;
+            this.lb_highscore.BackColor = System.Drawing.Color.Transparent;
             this.lb_highscore.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_highscore.Location = new System.Drawing.Point(594, 406);
             this.lb_highscore.Name = "lb_highscore";
@@ -87,6 +90,7 @@
             // 
             this.lb_Highscoretxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_Highscoretxt.AutoSize = true;
+            this.lb_Highscoretxt.BackColor = System.Drawing.Color.Transparent;
             this.lb_Highscoretxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Highscoretxt.Location = new System.Drawing.Point(400, 406);
             this.lb_Highscoretxt.Name = "lb_Highscoretxt";
@@ -97,6 +101,7 @@
             // lb_stig
             // 
             this.lb_stig.AutoSize = true;
+            this.lb_stig.BackColor = System.Drawing.Color.Transparent;
             this.lb_stig.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_stig.Location = new System.Drawing.Point(102, 13);
             this.lb_stig.Name = "lb_stig";
@@ -108,6 +113,7 @@
             // 
             this.lb_gameover.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_gameover.AutoSize = true;
+            this.lb_gameover.BackColor = System.Drawing.Color.Transparent;
             this.lb_gameover.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_gameover.Location = new System.Drawing.Point(383, 218);
             this.lb_gameover.Name = "lb_gameover";
@@ -118,6 +124,7 @@
             // lb_stigtxt
             // 
             this.lb_stigtxt.AutoSize = true;
+            this.lb_stigtxt.BackColor = System.Drawing.Color.Transparent;
             this.lb_stigtxt.Font = new System.Drawing.Font("MS Reference Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_stigtxt.Location = new System.Drawing.Point(3, 9);
             this.lb_stigtxt.Name = "lb_stigtxt";
@@ -136,8 +143,9 @@
             // 
             // boltinn
             // 
-            this.boltinn.BackColor = System.Drawing.Color.Orange;
-            this.boltinn.Location = new System.Drawing.Point(571, 396);
+            this.boltinn.BackColor = System.Drawing.Color.Transparent;
+            this.boltinn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("boltinn.BackgroundImage")));
+            this.boltinn.Location = new System.Drawing.Point(771, 290);
             this.boltinn.Name = "boltinn";
             this.boltinn.Size = new System.Drawing.Size(50, 50);
             this.boltinn.TabIndex = 0;
