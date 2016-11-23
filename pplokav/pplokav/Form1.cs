@@ -16,7 +16,7 @@ namespace pplokav
         public int hradi_vinstri = 4;
         public int hradi_efst = 4;
         public int stig = 0;
-
+        public int high_score = 0;
         public Form1()
         {
             InitializeComponent();
@@ -34,6 +34,9 @@ namespace pplokav
             lb_gameover.Left = (bakgrunnur.Width / 2) - (lb_gameover.Width / 2);
             lb_gameover.Top = (bakgrunnur.Height / 2) - (lb_gameover.Height / 2);
             lb_gameover.Visible = false;
+            lb_highscore.Visible = false;
+            lb_Highscoretxt.Visible = false;
+            lb_newhighscore.Visible = false;
 
         }
 
@@ -71,6 +74,15 @@ namespace pplokav
             {
                 timer1.Enabled = false;//stoppar leik ef bolti fer utaf
                 lb_gameover.Visible = true;//synir GAME-OVER
+                lb_Highscoretxt.Visible = true;
+                lb_highscore.Visible = true;
+                if (high_score<stig)
+                {
+                    high_score = 0;
+                    high_score = stig;
+                    lb_highscore.Text = high_score.ToString();
+                    lb_newhighscore.Visible = true;
+                }
             }
 
         }
@@ -93,6 +105,9 @@ namespace pplokav
                 timer1.Enabled = true;
                 lb_gameover.Visible = false;
                 bakgrunnur.BackColor = Color.White;
+                lb_highscore.Visible = false;
+                lb_Highscoretxt.Visible = false;
+                lb_newhighscore.Visible = false;
                 return true;
             }
             return base.ProcessDialogKey(keyData);
