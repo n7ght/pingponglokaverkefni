@@ -17,6 +17,7 @@ namespace pplokav
         public int hradi_efst = 4;
         public int stig = 0;
         public int high_score = 0;
+        public Random rand_bolti = new Random();
         public Form1()
         {
             InitializeComponent();
@@ -37,7 +38,8 @@ namespace pplokav
             lb_highscore.Visible = false;
             lb_Highscoretxt.Visible = false;
             lb_newhighscore.Visible = false;
-
+            boltinn.Top = rand_bolti.Next(1, 10);
+            boltinn.Left = rand_bolti.Next(1, 1500);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -108,6 +110,8 @@ namespace pplokav
                 lb_highscore.Visible = false;
                 lb_Highscoretxt.Visible = false;
                 lb_newhighscore.Visible = false;
+                boltinn.Top = rand_bolti.Next(1, 10);
+                boltinn.Left = rand_bolti.Next(1, 1500);
                 return true;
             }
             return base.ProcessDialogKey(keyData);
