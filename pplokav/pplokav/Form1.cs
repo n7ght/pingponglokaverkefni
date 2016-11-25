@@ -18,6 +18,7 @@ namespace pplokav
         public int stig = 0;
         public int high_score = 0;
         public Random rand_bolti = new Random();
+        public string nafn_a_file = @"highscore.txt";
         public Form1()
         {
             InitializeComponent();
