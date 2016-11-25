@@ -1,2 +1,5 @@
 # pingponglokaverkefni
 ola senor
+
+hallo
+
